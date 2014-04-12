@@ -8444,6 +8444,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FayeObjCFramework/FayeObjCFramework-Prefix.pch";
 				INFOPLIST_FILE = "FayeObjCFramework/FayeObjCFramework-Info.plist";
+				LD_DYLIB_INSTALL_NAME = "@rpath/$(EXECUTABLE_PATH)";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/lib/SocketRocket/.env\"",
@@ -8465,6 +8466,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FayeObjCFramework/FayeObjCFramework-Prefix.pch";
 				INFOPLIST_FILE = "FayeObjCFramework/FayeObjCFramework-Info.plist";
+				LD_DYLIB_INSTALL_NAME = "@rpath/$(EXECUTABLE_PATH)";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/lib/SocketRocket/.env\"",
