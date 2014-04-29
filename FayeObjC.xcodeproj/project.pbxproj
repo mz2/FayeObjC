@@ -18,7 +18,7 @@
 		8D748B4517584A05008BF25D /* NSString+FayeInflectionSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D748B4217584A05008BF25D /* NSString+FayeInflectionSupport.m */; };
 		8D748B4617584A05008BF25D /* NSString+FayeInflectionSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D748B4217584A05008BF25D /* NSString+FayeInflectionSupport.m */; };
 		8DF03A5116ED90C8000A0035 /* FayeClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DF03A2916ED90C8000A0035 /* FayeClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8DF03A5216ED90C8000A0035 /* FayeClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DF03A2916ED90C8000A0035 /* FayeClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8DF03A5216ED90C8000A0035 /* FayeClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DF03A2916ED90C8000A0035 /* FayeClient.h */; };
 		8DF03A5516ED90C8000A0035 /* FayeMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DF03A2B16ED90C8000A0035 /* FayeMessage.h */; };
 		8DF03A5616ED90C8000A0035 /* FayeMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DF03A2B16ED90C8000A0035 /* FayeMessage.h */; };
 		8DF047E116ED9876000A0035 /* NSDate-UTC.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DF03A7D16ED9862000A0035 /* NSDate-UTC.h */; };
@@ -8125,7 +8125,7 @@
 		8D0761E416ED29C5002D5F3D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Paul Crawford";
 			};
 			buildConfigurationList = 8D0761E716ED29C5002D5F3D /* Build configuration list for PBXProject "FayeObjC" */;
@@ -8381,7 +8381,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -8413,7 +8412,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -8519,12 +8517,13 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FayeObjCLibrary/FayeObjCLibrary-Prefix.pch";
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/lib/SocketRocket/\"";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/lib/SocketRocket/.env\"",
 					"\"$(SRCROOT)/lib/SocketRocket/.env/lib/python2.7/config\"",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = FayeObjC;
 				SDKROOT = iphoneos;
@@ -8539,7 +8538,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FayeObjCLibrary/FayeObjCLibrary-Prefix.pch";
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/lib/SocketRocket/\"";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/lib/SocketRocket/.env\"",

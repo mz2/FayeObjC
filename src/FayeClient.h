@@ -30,7 +30,7 @@
 #import <UIKit/UIKit.h>
 #endif
 
-#import <SocketRocket/SRWebSocket.h>
+#import "SRWebSocket.h"
 
 enum _fayeStates {
   kWebSocketDisconnected,

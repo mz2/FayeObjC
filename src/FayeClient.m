@@ -444,7 +444,7 @@
             } else if ([fm.channel isEqualToString:SUBSCRIBE_CHANNEL]) {
                 [pendingSubscriptions removeObject:fm.subscription];
                 if ([fm.successful boolValue]) {
-                    NSLog(@"SUBSCRIBED TO CHANNEL %@ ON FAYE", fm.subscription);
+                    //NSLog(@"SUBSCRIBED TO CHANNEL %@ ON FAYE", fm.subscription);
                     [openSubscriptions addObject:fm.subscription];
                     if(self.delegate != NULL && [self.delegate respondsToSelector:@selector(didSubscribeToChannel:)]) {          
                         [self.delegate didSubscribeToChannel:fm.subscription];
